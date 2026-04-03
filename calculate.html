@@ -160,143 +160,144 @@
     document.getElementById("display").removeAttribute("hidden");
   }
 </script>
+<div id="container">
 
-<h1> Caleb's Out Of Touch Index Calculator </h1>
-<p>
-  Just paste in your list of songs from #1 to #100, one on each line, like this:
-</p>
-<p>
-  A Change of Seasons</br>    
-  Metropolis Pt. 1: the Miracle and the Sleeper</br>    
-  Learning To Live</br>     
-  Octavarium</br>     
-  Voices</br>     
-  ...</br> 
-</p>
-<p>
-  Also you gotta spell shit the way Reaper did lmao :/
-</p>
+  <h1> Caleb's Out Of Touch Index Calculator </h1>
+  <p>
+    Just paste in your list of songs from #1 to #100, one on each line, like this:
+  </p>
+  <p>
+    A Change of Seasons</br>    
+    Metropolis Pt. 1: the Miracle and the Sleeper</br>    
+    Learning To Live</br>     
+    Octavarium</br>     
+    Voices</br>     
+    ...</br> 
+  </p>
+  <p>
+    Also you gotta spell shit the way Reaper did lmao :/
+  </p>
 
-<textarea id="submission">
-  
-</textarea>
-</br> 
-<button onclick="calculate()">Calculate</button>
+  <textarea id="submission">
+    
+  </textarea>
+  </br> 
+  <button onclick="calculate()">Calculate</button>
 
-<div id="display" hidden>
-  <h2> Your out of touch index is:</h2>
-  <h2 id="output"></h2>
+  <div id="display" hidden>
+    <h2> Your out of touch index is:</h2>
+    <h2 id="output"></h2>
+  </div>
+
+  <h3> Rules</h3>
+  <p>
+    Sum of - difference between your score and Reaper's calculated total - for all songs, all divided by the total songs counted</br> 
+    Ignore ones that didn't make the final top 100, but include every song that did in the calculation 
+  </p>
+
+  <h3> Reaper's Final List</h3>
+  <p>
+    <pre>
+      1    A Change of Seasons    
+      2    Metropolis Pt. 1: the Miracle and the Sleeper    
+      3    Learning To Live    
+      4    Octavarium    
+      5    Voices    
+      6    The Glass Prison    
+      7    Home    
+      8    In the Name of God    
+      9    The Count of Tuscany    
+      10    Breaking All Illusions    
+      11    Trial of Tears    
+      12    Scarred    
+      13    Take the Time    
+      14    Blind Faith    
+      15    Six Degrees of Inner Turbulence    
+      16    Strange Deja Vu    
+      17    Under a Glass Moon    
+      18    Fatal Tragedy    
+      19    Surrounded    
+      20    In the Presence of Enemies    
+      21    Pull Me Under    
+      22    Finally Free    
+      23    Lines In the Sand    
+      24    Beyond This Life    
+      25    Endless Sacrifice    
+      26    The Mirror    
+      27    Bridges In the Sky    
+      28    Overture 1928    
+      29    Stream of Consciousness    
+      30    Misunderstood    
+      31    Space-Dye Vest    
+      32    This Dying Soul    
+      33    The Spirit Carries On    
+      34    The Root of All Evil    
+      35    Erotomania    
+      36    The Shadow Man Incident    
+      37    At Wit's End    
+      38    Lifting Shadows Off a Dream    
+      39    Hell's Kitchen    
+      40    6:00    
+      41    Illumination Theory    
+      42    As I Am    
+      43    The Dance of Eternity    
+      44    Panic Attack    
+      45    A View from the Top of the World    
+      46    Another Day    
+      47    A Nightmare To Remember    
+      48    Bend The Clock    
+      49    Innocence Faded    
+      50    The Great Debate    
+      51    These Walls    
+      52    Lie    
+      53    Caught In a Web    
+      54    Disappear    
+      55    Peruvian Skies    
+      56    Wait For Sleep    
+      57    Barstool Warrior    
+      58    Hollow Years    
+      59    The Killing Hand    
+      60    The Dark Eternal Night    
+      61    The Ministry of Lost Souls    
+      62    The Shattered Fortress    
+      63    Honor Thy Father    
+      64    Raise The Knife    
+      65    One Last Time    
+      66    On the Backs of Angels    
+      67    Sacrificed Sons    
+      68    Outcry    
+      69    The Best of Times    
+      70    A Fortune in Lies    
+      71    The Alien    
+      72    Lost Not Forgotten    
+      73    Ytse Jam    
+      74    Pale Blue Dot    
+      75    Only a Matter of Time    
+      76    The Bigger Picture    
+      77    Constant Motion    
+      78    Fall Into The Light    
+      79    The Enemy Inside    
+      80    The Silent Man    
+      81    Night Terror    
+      82    To Live Forever    
+      83    Sleeping Giant    
+      84    Awaken the Master    
+      85    A Broken Man    
+      86    Answering the Call    
+      87    New Millennium    
+      88    This is the Life    
+      89    Vacant    
+      90    Through Her Eyes    
+      91    Afterlife    
+      92    S2N    
+      93    Dead Asleep    
+      94    Surrender To Reason    
+      95    Beneath the Surface    
+      96    I Walk Beside You    
+      97    Transcending Time    
+      98    Forsaken    
+      99    Wither    
+      100   The Looking Glass
+    </pre>
+  </p>
 </div>
-
-<h3> Rules</h3>
-<p>
-  Sum of - difference between your score and Reaper's calculated total - for all songs, all divided by the total songs counted</br> 
-  Ignore ones that didn't make the final top 100, but include every song that did in the calculation 
-</p>
-
-<h3> Reaper's Final List</h3>
-<p>
-  <pre>
-    1    A Change of Seasons    
-    2    Metropolis Pt. 1: the Miracle and the Sleeper    
-    3    Learning To Live    
-    4    Octavarium    
-    5    Voices    
-    6    The Glass Prison    
-    7    Home    
-    8    In the Name of God    
-    9    The Count of Tuscany    
-    10    Breaking All Illusions    
-    11    Trial of Tears    
-    12    Scarred    
-    13    Take the Time    
-    14    Blind Faith    
-    15    Six Degrees of Inner Turbulence    
-    16    Strange Deja Vu    
-    17    Under a Glass Moon    
-    18    Fatal Tragedy    
-    19    Surrounded    
-    20    In the Presence of Enemies    
-    21    Pull Me Under    
-    22    Finally Free    
-    23    Lines In the Sand    
-    24    Beyond This Life    
-    25    Endless Sacrifice    
-    26    The Mirror    
-    27    Bridges In the Sky    
-    28    Overture 1928    
-    29    Stream of Consciousness    
-    30    Misunderstood    
-    31    Space-Dye Vest    
-    32    This Dying Soul    
-    33    The Spirit Carries On    
-    34    The Root of All Evil    
-    35    Erotomania    
-    36    The Shadow Man Incident    
-    37    At Wit's End    
-    38    Lifting Shadows Off a Dream    
-    39    Hell's Kitchen    
-    40    6:00    
-    41    Illumination Theory    
-    42    As I Am    
-    43    The Dance of Eternity    
-    44    Panic Attack    
-    45    A View from the Top of the World    
-    46    Another Day    
-    47    A Nightmare To Remember    
-    48    Bend The Clock    
-    49    Innocence Faded    
-    50    The Great Debate    
-    51    These Walls    
-    52    Lie    
-    53    Caught In a Web    
-    54    Disappear    
-    55    Peruvian Skies    
-    56    Wait For Sleep    
-    57    Barstool Warrior    
-    58    Hollow Years    
-    59    The Killing Hand    
-    60    The Dark Eternal Night    
-    61    The Ministry of Lost Souls    
-    62    The Shattered Fortress    
-    63    Honor Thy Father    
-    64    Raise The Knife    
-    65    One Last Time    
-    66    On the Backs of Angels    
-    67    Sacrificed Sons    
-    68    Outcry    
-    69    The Best of Times    
-    70    A Fortune in Lies    
-    71    The Alien    
-    72    Lost Not Forgotten    
-    73    Ytse Jam    
-    74    Pale Blue Dot    
-    75    Only a Matter of Time    
-    76    The Bigger Picture    
-    77    Constant Motion    
-    78    Fall Into The Light    
-    79    The Enemy Inside    
-    80    The Silent Man    
-    81    Night Terror    
-    82    To Live Forever    
-    83    Sleeping Giant    
-    84    Awaken the Master    
-    85    A Broken Man    
-    86    Answering the Call    
-    87    New Millennium    
-    88    This is the Life    
-    89    Vacant    
-    90    Through Her Eyes    
-    91    Afterlife    
-    92    S2N    
-    93    Dead Asleep    
-    94    Surrender To Reason    
-    95    Beneath the Surface    
-    96    I Walk Beside You    
-    97    Transcending Time    
-    98    Forsaken    
-    99    Wither    
-    100   The Looking Glass
-  </pre>
-</p>
-
